@@ -1,12 +1,17 @@
 package com.company;
 
 public class Kolko_krzyzyk {
-
     public static void main(String[] args) {
-        System.out.println("Witaj w mojej grze !!!\n");
-        System.out.println("** Kółko krzyżyk **");
-        Silnik.main();
 
+        Wyswietlenie.powitanie();
+        char[] plansza = Plansza.plansza();
+
+        for (int i = 0; i < 5; i++) {
+            GraczJeden.graczJeden(plansza);
+            if (i < 4) {
+                GraczDwa.graczDwa(plansza);
+            }
+        }
     }
 }
 
