@@ -1,11 +1,10 @@
 package com.company;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class GraczDwa {
     public static void graczDwa(char[] plansza) {
-        Scanner input = new Scanner(System.in);
+//        Scanner input = new Scanner(System.in);
         boolean pomocnicza = true;
         int wybor;
         do {
@@ -30,6 +29,7 @@ public class GraczDwa {
                         System.out.print(plansza[i] + "  ");
                     pomocnicza = false;
                 }
+                Sprawdzenie.porownanie(plansza);
             } catch (InputMismatchException | ArrayIndexOutOfBoundsException e) {
                 Wyswietlenie.nieprawidlowaWartosc();;
             }

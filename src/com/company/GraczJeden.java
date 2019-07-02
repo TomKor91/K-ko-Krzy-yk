@@ -1,11 +1,10 @@
 package com.company;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class GraczJeden {
     public static void graczJeden(char[] plansza) {
-        Scanner input = new Scanner(System.in);
+//        Scanner input = new Scanner(System.in);
         boolean pomocnicza = true;
         int wybor;
         do {
